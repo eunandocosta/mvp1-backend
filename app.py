@@ -54,9 +54,8 @@ def apresenta_produtos(produtos: List[Produto]):
 
     return {"produtos": result}
 
-def apresenta_produto(produto: Produto):
-    """ Retorna uma representação do produto seguindo o schema definido em
-        ProdutoViewSchema.
+def insere_produto(produto: Produto):
+    """ Retorna uma representação do produto.
     """
     return {
         "imagem" : produto.imagem,
@@ -102,7 +101,8 @@ def insert(form: ProdutoSchema):
         )
         print(produto)
         logger.debug(f"Adicionando produto de nome: '{produto.nome}'")
-        return apresenta_produto(produto), 200
+        produto_insert(produto)
+        return {"Message": f"Produto inserido {produto.nome}"}, 200
     except IntegrityError as e:
         # como a duplicidade do nome é a provável razão do IntegrityError
         error_msg = "Produto de mesmo nome já salvo na base :/"

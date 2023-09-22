@@ -4,7 +4,7 @@ import os
 
 def produto_create():
     try:
-        db_path = './backend/database'
+        db_path = './database'
 
         # Cria se o diretorio não existir
         os.makedirs(db_path, exist_ok=True)
@@ -36,7 +36,7 @@ def produto_create():
 
 def produto_insert(self):
     try:
-        db_path_join = os.path.join('./backend/database', 'loja.db')
+        db_path_join = os.path.join('./database', 'loja.db')
         conexao = sqlite3.connect(db_path_join)
         cursor = conexao.cursor()
         date = datetime.now()
@@ -53,7 +53,7 @@ def produto_insert(self):
     
 def produto_show():
     try:
-        db_path_join = os.path.join('./backend/database', 'loja.db')
+        db_path_join = os.path.join('./database', 'loja.db')
         conexao = sqlite3.connect(db_path_join)
         cursor = conexao.cursor()
         # Execute uma consulta para obter os nomes das colunas
@@ -70,7 +70,7 @@ def produto_show():
     
 def produto_delete(nome):
     try:
-        db_path_join = os.path.join('./backend/database', 'loja.db')
+        db_path_join = os.path.join('./database', 'loja.db')
         conexao = sqlite3.connect(db_path_join)
         cursor = conexao.cursor()
         cursor.execute("DELETE FROM produtos WHERE nome = ?", (nome,))
@@ -86,7 +86,7 @@ def __str__(self):
 
 def produto_patch(nome, novo_estoque):
     try:
-        db_path_join = os.path.join('./backend/database', 'loja.db')
+        db_path_join = os.path.join('./database', 'loja.db')
         conexao = sqlite3.connect(db_path_join)
         cursor = conexao.cursor()
         consulta_sql = "UPDATE produtos SET estoque = ? WHERE nome = ?"

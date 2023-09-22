@@ -1,21 +1,74 @@
-[2023-09-19 22:52:32,982] INFO _log() L187  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.15.3:5000 - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:52:32,983] INFO _log() L187  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:54:13,177] INFO _log() L187  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.15.3:5000 - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:54:13,179] INFO _log() L187  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:54:13,185] INFO _log() L187   * Restarting with stat - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:55:09,718] INFO _log() L187  127.0.0.1 - - [19/Sep/2023 22:55:09] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:55:09,751] INFO _log() L187  127.0.0.1 - - [19/Sep/2023 22:55:09] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:55:10,010] INFO _log() L187  127.0.0.1 - - [19/Sep/2023 22:55:10] "GET /openapi/static/images/swagger.svg HTTP/1.1" 200 - - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:55:10,109] INFO _log() L187  127.0.0.1 - - [19/Sep/2023 22:55:10] "GET /openapi/static/images/redoc.svg HTTP/1.1" 200 - - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:55:10,140] INFO _log() L187  127.0.0.1 - - [19/Sep/2023 22:55:10] "GET /openapi/static/images/rapidoc.svg HTTP/1.1" 200 - - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:55:10,691] INFO _log() L187  127.0.0.1 - - [19/Sep/2023 22:55:10] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:55:11,004] INFO _log() L187  127.0.0.1 - - [19/Sep/2023 22:55:11] "GET /openapi/static/css/swagger-ui.css HTTP/1.1" 200 - - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:55:11,036] INFO _log() L187  127.0.0.1 - - [19/Sep/2023 22:55:11] "GET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1" 200 - - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:55:11,036] INFO _log() L187  127.0.0.1 - - [19/Sep/2023 22:55:11] "GET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1" 200 - - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
-[2023-09-19 22:55:11,502] INFO _log() L187  127.0.0.1 - - [19/Sep/2023 22:55:11] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\projeto\backend\venv\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:40:25,188] ERROR log_exception() L1414 Exception on /swagger [GET] - call_trace=C:\Python311\Lib\site-packages\flask\app.py L1414
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'getter' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-09-22 16:40:25,194] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:40:25] "[35m[1mGET /swagger?nome=Harry%20Potter%20e%20o%20Prisioneiro%20de%20Azkaban HTTP/1.1[0m" 500 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:40:30,593] ERROR log_exception() L1414 Exception on /swagger [DELETE] - call_trace=C:\Python311\Lib\site-packages\flask\app.py L1414
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'delete' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-09-22 16:40:30,596] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:40:30] "[35m[1mDELETE /swagger?nome=Harry%20Potter%20e%20o%20Prisioneiro%20de%20Azkaba HTTP/1.1[0m" 500 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:40:36,787] ERROR log_exception() L1414 Exception on /swagger [DELETE] - call_trace=C:\Python311\Lib\site-packages\flask\app.py L1414
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'delete' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-09-22 16:40:36,788] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:40:36] "[35m[1mDELETE /swagger?nome=Harry%20Potter%20e%20o%20Prisioneiro%20de%20Azkaban HTTP/1.1[0m" 500 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:40:41,314] ERROR log_exception() L1414 Exception on /swagger [DELETE] - call_trace=C:\Python311\Lib\site-packages\flask\app.py L1414
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'delete' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-09-22 16:40:41,317] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:40:41] "[35m[1mDELETE /swagger?nome=Harry%20Potter%20e%20o%20Prisioneiro%20de%20Azkaban HTTP/1.1[0m" 500 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:40:43,637] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:40:43] "[35m[1mGET /produto/exibir HTTP/1.1[0m" 202 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:40:43,943] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:40:43] "[35m[1mGET /produto/exibir HTTP/1.1[0m" 202 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:40:52,228] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:40:52] "POST /swagger HTTP/1.1" 200 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:40:56,006] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:40:56] "[35m[1mGET /produto/exibir HTTP/1.1[0m" 202 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:40:56,327] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:40:56] "[35m[1mGET /produto/exibir HTTP/1.1[0m" 202 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:40:58,474] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:40:58] "POST /swagger HTTP/1.1" 200 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:41:02,971] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:41:02] "[35m[1mGET /produto/exibir HTTP/1.1[0m" 202 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:41:03,284] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:41:03] "[35m[1mGET /produto/exibir HTTP/1.1[0m" 202 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:42:18,248] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:42:18] "POST /swagger HTTP/1.1" 200 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:42:33,147] INFO _log() L187  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:42:33,148] INFO _log() L187  [33mPress CTRL+C to quit[0m - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:42:36,431] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:42:36] "POST /swagger HTTP/1.1" 200 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-22 16:42:44,796] INFO _log() L187  127.0.0.1 - - [22/Sep/2023 16:42:44] "POST /swagger HTTP/1.1" 200 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
