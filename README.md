@@ -26,4 +26,4 @@ Para executar a API inicie o ambiente virtual e execute:
 (env)$ python -m flask run
 ```
 
-Abra o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador para verificar o status da API em execução.
+Abra o [http://localhost:5000/#/](http://localhost:5000/) no navegador para verificar o status da API em execução.
