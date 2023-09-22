@@ -23,13 +23,6 @@ Para executar a API inicie o ambiente virtual e execute:
 
 ```
 (env)$ cd backend (apenas em caso não esteja na pasta backend)
-(env)$ flask run --host 0.0.0.0 --port 5000
-```
-
-Em modo de desenvolvimento é recomendado executar utilizando o parâmetro reload, que reiniciará o servidor
-automaticamente após uma mudança no código fonte. 
-
-```
 (env)$ python -m flask run
 ```
 
